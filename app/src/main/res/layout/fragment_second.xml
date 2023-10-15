@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/icon"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:src="@drawable/sharp_logout_24"
+        android:visibility="gone" />
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginRight="130dp"
+            android:layout_centerHorizontal="true"
+            android:text="Login"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/uname"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:layout_below="@id/txtLogin"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_edittext_bg"
+            android:hint="Username"
+            />
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/username"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_edittext_bg"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+
+        <CheckBox
+            android:id="@+id/Checks2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="300dp"
+            android:text="Remember me"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/Terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginTop="320dp"
+            android:text="Forgot Password?"
+            android:layout_marginLeft="290dp"
+            android:textColor="@color/highlight"
+            android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/highlight"
+        android:text="Login"
+        android:layout_below="@id/Checks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/NewMem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="169dp"
+        android:layout_marginRight="20dp"
+        android:text="New Member?"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/Regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/NewMem"
+        android:layout_below="@id/btnRegis"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="223dp"
+        android:layout_marginRight="20dp"
+        android:text="Register"
+        android:textColor="@color/highlight"
+        android:textSize="8sp" />
+
+</FrameLayout>
